@@ -1,3 +1,5 @@
+package bankTracking;
+
 import javax.persistence.*;
 
 @MappedSuperclass

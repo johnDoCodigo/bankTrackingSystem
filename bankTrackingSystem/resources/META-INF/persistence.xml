@@ -4,19 +4,18 @@
              http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
              version="2.1">
     <persistence-unit name="bankTrackingSystem">
-        <class>mindswap.bankTrackingSystem.Customer</class>
-        <class>mindswap.bankTrackingSystem.Person</class>
-        <class>mindswap.bankTrackingSystem.Accounts</class>
-        <class>mindswap.bankTrackingSystem.Main</class>
-        <class>mindswap.jpa.entity.Person</class>
+        <class>bankTrackingSystem.bankTracking.Customer</class>
+        <class>bankTrackingSystem.bankTracking.Person</class>
+        <class>bankTrackingSystem.bankTracking.Account</class>
+        <class>bankTrackingSystem.bankTracking.Main</class>
         <properties>
             <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
-            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3307/bankTrackingSystem"/>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/bankTrackingSystem"/>
             <property name="hibernate.connection.user" value="root"/>
-            <property name="hibernate.connection.password" value="secret"/>
+            <property name="hibernate.connection.password" value="1234"/>
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>
-            <property name="hibernate.hbm2ddl.auto" value="create"/>
+            <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
         </properties>
     </persistence-unit>
 </persistence>
